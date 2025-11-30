@@ -21,7 +21,7 @@ PhotoStudio est une application composée de deux parties :
   - Edge Enhance
   - Brightness +/-
 
-_(Capture d’écran de l’interface ici)_
+![Interface PhotoStudio](./interface.png)
 
 ### Compression Huffman (C)
 
@@ -34,22 +34,7 @@ _(Capture d’écran de l’interface ici)_
   - pourcentage de réduction
   - temps de compression (ms)
 
-_(Capture d’écran du rapport de compression ici)_
-
-## Architecture du projet
-
-PhotoStudio/
-│
-├── compressor_c/
-│ ├── huffman.c
-│ ├── huffman.h
-│ ├── main.c
-│ └── Makefile
-│
-└── photostudio_python/
-├── main.py
-├── gallery/
-└── ui/
+![Rapport de compression](./rapport_compression.png)
 
 Le programme C génère un binaire `huff` utilisé par la partie Python via `subprocess`.
 
